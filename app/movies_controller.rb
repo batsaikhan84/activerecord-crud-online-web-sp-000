@@ -30,7 +30,6 @@ def can_be_created_in_a_block(args = {:title => "Home Alone", :release_date => 1
   
   Movie.create do |m|
     args.each {|k, v| m.send("#{k}=", v)}
-    binding.pry
   end
 end
 
